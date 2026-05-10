@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #071120;
+  color: #f8fafc;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide WebKit phone/email autofill picker & credential glyphs inside inputs */
+.input-no-internal-icons::-webkit-contacts-auto-fill-button,
+.input-no-internal-icons::-webkit-credentials-auto-fill-button {
+  display: none !important;
+  visibility: hidden;
+  pointer-events: none;
+  width: 0;
+  margin: 0;
+}
+
+/* Contact email: strip remaining Chromium/Safari in-field decorations (key / autofill affordances) */
+#contact-email {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+#contact-email::-webkit-textfield-decoration-container {
+  display: none !important;
+}
+
+#contact-email::-webkit-credentials-auto-fill-button,
+#contact-email::-webkit-contacts-auto-fill-button {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#contact-email::-webkit-strong-password-auto-fill-button {
+  display: none !important;
+}
