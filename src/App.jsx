@@ -221,7 +221,7 @@ function App() {
               <GlassCard className="rounded-3xl border-[#D4AF37]/30 text-center shadow-[0_25px_90px_rgba(212,175,55,0.16)]">
                 <div className="mx-auto mt-0 flex h-28 w-28 items-center justify-center overflow-hidden rounded-full border-2 border-[#D4AF37]/70 bg-[#0F172A] shadow-[0_0_30px_rgba(212,175,55,0.35)]">
                   <img
-                    src="/src/assets/sachin.jpg"
+                    src="/images/sachin.jpg"
                     alt="CA Sachin K Rangapur"
                     className="h-full w-full object-cover"
                   />
